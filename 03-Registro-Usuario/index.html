@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - Appwise</title>
+  </head>
+  <body>
+    <header>
+      <h1>Únete a la Comunidad Appwise</h1>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label for="nombre">Nombre Completo:</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Ej: Juan Pérez"
+          />
+
+          <label for="email">Correo Electronico</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="tu@email.com"
+          />
+
+          <label for="contrasenia">Contraseña</label>
+          <input type="password" name="contrasenia" id="contrasenia" />
+
+          <label for="fecha_nac">Fecha de Nacimiento</label>
+          <input type="date" name="fecha_nac" id="fecha_nac" />
+
+          <label for="nivel_programacion">Nivel en Programación</label>
+          <select name="nivel_programacion" id="nivel_programacion">
+            <option value="Trainee">Trainee</option>
+            <option value="Junior">Junior</option>
+            <option value="Semi-Senior">Semi-Senior</option>
+          </select>
+        </div>
+
+        <div>
+          <h3>¿Cuál es tu especialidad favorita?</h3>
+          <input type="radio" name="frontend_backend" id="frontend" />
+          <label for="frontend">Frontend (Diseño e Interfaz)</label>
+          <input type="radio" name="frontend_backend" id="backend" />
+          <label for="backend">Backend (Lógica y Bases de Datos)</label>
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            name="terminos_condiciones"
+            id="terminos_condiciones"
+            required
+          />
+          <label for="terminos_condiciones"
+            >Acepto los términos y condiciones de la academia</label
+          >
+        </div>
+        <button type="submit">Crear Cuenta</button>
+      </form>
+    </main>
+  </body>
+</html>
