@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel - Appwise</title>
+  </head>
+  <body>
+    <aside>
+      <h2>Appwise Admin</h2>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Usuarios</a></li>
+        <li><a href="#">Reportes</a></li>
+        <li><a href="#">Configuración</a></li>
+      </ul>
+    </aside>
+    <main>
+      <header>
+        <input type="search" placeholder="Buscar en el panel..." />
+        <div>
+          <p>Hola, <strong>Admin</strong></p>
+          <img src="./assets/avatar.png" alt="imagen_de_avatar" />
+        </div>
+      </header>
+      <section>
+        <h1>Resumen General</h1>
+        <article>
+          <h3>USUARIOS ACTIVOS</h3>
+          <p><strong>1,250</strong></p>
+          <span>+5% está semana</span>
+        </article>
+        <article>
+          <h3>VENTAS DEL MES</h3>
+          <p><strong>14,500</strong></p>
+          <span>+12% está semana</span>
+        </article>
+        <article>
+          <h3>TICKETS PENDIENTES</h3>
+          <p><strong>8</strong></p>
+          <span>Requiere atención</span>
+        </article>
+      </section>
+      <section>
+        <h3>Actividad reciente</h3>
+        <article>
+            <table>
+                <thead>
+                    <tr>
+                        <th>FECHA</th>
+                        <th>USUARIO</th>
+                        <th>ACCIÓN</th>
+                        <th>ESTADO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15 Oct, 10:30</td>
+                        <td><strong>carlos.dev</strong></td>
+                        <td>Subió un nuevo proyecto</td>
+                        <td>Completado</td>
+                    </tr>
+                     <tr>
+                        <td>15 Oct, 9:15</td>
+                        <td><strong>ana.ui</strong></td>
+                        <td>Actualizó perfil</td>
+                        <td>Completado</td>
+                    </tr> 
+                    <tr>
+                        <td>14 Oct, 18:45</td>
+                        <td>juan.perez</td>
+                        <td>Intento de pago</td>
+                        <td>Fallido</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+      </section>
+    </main>
+    <dialog open>
+        <h3>Añadir Nuevo Usuario</h3>
+        <form>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingresar tu nombre...">
+            <button type="submit">Guardar</button>
+            <button type="button">Cancelar</button>
+        </form>
+    </dialog>
+  </body>
+</html>
